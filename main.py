@@ -30,7 +30,7 @@ class Article(ArticleCreate):
     created_at: str
 
 # Маршруты
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 async def root():
     return """
 
